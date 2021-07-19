@@ -1,3 +1,7 @@
+$(window).on("load", function () {
+  $("#search-bar").width($("#logo").width() * 1.2);
+});
+
 function focusSearchBar() {
   $("#search-bar").css("box-shadow", "0 2px #d3d3d3");
 }
