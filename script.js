@@ -19,8 +19,6 @@ $(".clear").click(() => {
   $("#search-bar > input").val("");
 });
 
-$("#search-bar").width($("#logo").width() * 1.2);
-
 $(".lang-select > a").click(function (event) {
   event.preventDefault();
   const lang = $("html").prop("lang");
