@@ -6,8 +6,8 @@ function unfocusSearchBar() {
   $("#search-bar").css("box-shadow", "");
 }
 
-$("#search-bar > input").on("change textInput input", () => {
-  if ($("input").val().length === 0) {
+$("#search-bar > input").on("change textInput input", function () {
+  if ($(this).val().length === 0) {
     $(".clear").css("visibility", "hidden");
   } else {
     $(".clear").css("visibility", "visible");
